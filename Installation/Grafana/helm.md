@@ -15,3 +15,7 @@
 ## Expose Grafana Service
 
 `kubectl expose service grafana — type=NodePort — target-port=3000 — name=grafana-ext`
+
+## Expose to get data from new end point
+
+'kubectl expose service prometheus-kube-state-metrics --type=NodePort --target-port=8080 --name=prometheus-kube-state-metrics-ext'
